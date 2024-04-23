@@ -56,7 +56,7 @@ For detailed installation instructions, refer to the [CLI installation documenta
   curl localhost:8090
   curl -F 'image=@/Users/andii.kozachenko/Downloads/Google_Images_2015_logo.svg.png' localhost:8090/img/
 ```
-[![Test Synchronization and Application]https://drive.google.com/file/d/1LDE3k5glGFfAvWX70yWJYq3BD28Qlt7Q/view?usp=sharing
+[![Test Synchronization and Application]https://drive.google.com/file/d/1LDE3k5glGFfAvWX70yWJYq3BD28Qlt7Q/view?usp=sharing]
 
 ## Conclusion
 The MVP demonstrates the automated deployment of the go-demo-app using ArgoCD on a Kubernetes cluster provisioned with k3d. This setup enables the AsciiArtify team to efficiently manage application deployments and iterate on features based on user feedback.
