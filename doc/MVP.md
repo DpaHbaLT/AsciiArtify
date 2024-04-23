@@ -1,27 +1,24 @@
 # MVP (Minimum Viable Product)
 
-## Overview
-The Minimum Viable Product (MVP) for the AsciiArtify project aims to deploy a basic application using ArgoCD, which tracks changes from the GitHub repository [go-demo-app](https://github.com/den-vasyliev/go-demo-app) and automatically synchronizes them onto a Kubernetes cluster.
+## Introduce
+The Minimum Viable Product (MVP) of the AsciiArtify project is geared towards launching a fundamental application via ArgoCD. This application will monitor changes from the GitHub repository go-demo-app and automatically synchronize them onto a Kubernetes cluster.
 
 ## Steps to Set Up MVP
 
-### 1. Set Up Kubernetes Cluster with k3d
-- Use k3d to create a Kubernetes cluster locally.
-- Ensure that the cluster is up and running.
+### 1. Establishing a Kubernetes Cluster with k3d
+- Utilize k3d to create a local Kubernetes cluster.
+- Confirm the cluster's operational status.
 ```bash
   k3d cluster create demo
   kubectl cluster-info
 ```
-[![asciicast](https://asciinema.org/a/A0b9pKwb9g76RyGYQ9kktHGbf.svg)](https://asciinema.org/a/A0b9pKwb9g76RyGYQ9kktHGbf)
-
-### 2. Install ArgoCD
+### 2. Installing ArgoCD
 - Follow the official ArgoCD documentation to install ArgoCD on the Kubernetes cluster.
-- Verify that ArgoCD pods are running successfully.
+- Ensure successful deployment of ArgoCD pods.
 ```bash
   kubectl create namespace argocd
   kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
-[![asciicast](https://asciinema.org/a/np0sHVCgdJT5drNVHrbtpxy9w.svg)](https://asciinema.org/a/np0sHVCgdJT5drNVHrbtpxy9w)
 
 ### 3. Configure Application in ArgoCD
 - Download Argo CD CLI
